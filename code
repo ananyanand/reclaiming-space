@@ -36,7 +36,7 @@ class RecordManager {
     public RecordManager(String filename) {
         try {
             file = new RandomAccessFile(filename, "rw");
-            deletedFile = new RandomAccessFile("deleted_records.dat", "rw");
+            deletedFile = new RandomAccessFile("deleted_records.txt", "rw");
         } catch (IOException e) {
             e.printStackTrace();
         }
